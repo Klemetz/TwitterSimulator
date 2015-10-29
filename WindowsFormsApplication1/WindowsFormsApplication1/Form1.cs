@@ -30,20 +30,27 @@ namespace WindowsFormsApplication1
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             label2.Text =  "\nCharacter count is: " + richTextBox1.Text.Length;
-            /*if(richTextBox1.Text.Length > 140)
+            
+        }
+
+        private void richTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (richTextBox1.Text.Length >= 140)
             {
-                if(e.KeyChar == (char)8)
+                if (e.KeyChar == (char)8)
                 {
 
                 }
                 else
                 {
-                    //TODO fakk things app
+                    richTextBox1.BackColor = Color.Maroon;
                 }
 
-            }*/
+            }
+            else if(richTextBox1.Text.Length < 140)
+            {
+                richTextBox1.BackColor = Color.White;
+            }
         }
-
-     
     }
 }

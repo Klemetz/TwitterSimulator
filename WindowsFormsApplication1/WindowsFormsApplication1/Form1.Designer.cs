@@ -57,6 +57,7 @@
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
+            this.richTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.richTextBox1_KeyPress);
             // 
             // pictureBox1
             // 
@@ -73,9 +74,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(481, 433);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(99, 26);
             this.label2.TabIndex = 4;
-            this.label2.Text =  "\nCharacter count is: ";
+            this.label2.Text = "\nCharacter count is: ";
             // 
             // Form1
             // 

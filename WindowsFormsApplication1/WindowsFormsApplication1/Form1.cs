@@ -29,8 +29,21 @@ namespace WindowsFormsApplication1
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
+            label2.Text =  "\nCharacter count is: " + richTextBox1.Text.Length;
+            /*if(richTextBox1.Text.Length > 140)
+            {
+                if(e.KeyChar == (char)8)
+                {
 
+                }
+                else
+                {
+                    //TODO fakk things app
+                }
+
+            }*/
         }
 
+     
     }
 }

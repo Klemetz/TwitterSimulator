@@ -11,3 +11,6 @@ C:\Users\JOnathan\Documents\GitHub\TwitterSimulator\WindowsFormsApplication1\Win
 C:\Users\Anton\Documents\GitHub\TwitterSimulator\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\Anton\Documents\GitHub\TwitterSimulator\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\Anton\Documents\GitHub\TwitterSimulator\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\JOnathan\Documents\GitHub\TwitterSimulator\WindowsFormsApplication1\WindowsFormsApplication1\bin\Debug\TwuttarSimulators.exe.config
+C:\Users\JOnathan\Documents\GitHub\TwitterSimulator\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\TwuttarSimulators.exe
+C:\Users\JOnathan\Documents\GitHub\TwitterSimulator\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\TwuttarSimulators.pdb

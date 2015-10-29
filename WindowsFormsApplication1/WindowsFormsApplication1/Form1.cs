@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+
 
 namespace WindowsFormsApplication1
 {
@@ -17,8 +19,6 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -48,6 +48,9 @@ namespace WindowsFormsApplication1
                 else
                 {
                     richTextBox1.BackColor = Color.Maroon;
+                   // var player2 = new WMPLib.WindowsMediaPlayer(Properties.Resources.Scream); 
+                   // player2.Play();
+
                 }
 
             }
@@ -61,6 +64,40 @@ namespace WindowsFormsApplication1
         {
                 System.Media.SoundPlayer player = new System.Media.SoundPlayer(Properties.Resources.music5);
                 player.PlayLooping();
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "";
+        }
+
+        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+            if(saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                using (Stream s = File.Open(saveFileDialog1.FileName, FileMode.CreateNew))
+                using (StreamWriter sw = new StreamWriter(s))
+                {
+                    sw.Write(richTextBox1.Text);
+                }
+            }
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Stream openStream;
+            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+            if(openFileDialog1.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            {
+                if((openStream = openFileDialog1.OpenFile()) != null)
+                {
+                    string strfilename = openFileDialog1.FileName;
+                    string filetext = File.ReadAllText(strfilename);
+                    richTextBox1.Text = filetext;
+                }
+            }
         }
     }
 }

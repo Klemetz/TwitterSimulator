@@ -46,18 +46,19 @@
             // saveToolStripMenuItem
             // 
             saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            saveToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             saveToolStripMenuItem.Text = "New";
+            saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 23.25F);
-            this.label1.Location = new System.Drawing.Point(278, 47);
+            this.label1.Location = new System.Drawing.Point(279, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 44);
+            this.label1.Size = new System.Drawing.Size(318, 44);
             this.label1.TabIndex = 1;
-            this.label1.Text = "TwuttersSimuretors";
+            this.label1.Text = "TwuttersSimurators";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // richTextBox1
@@ -76,7 +77,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.rsz_prnnifc;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 48);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 108);
             this.pictureBox1.TabIndex = 3;
@@ -123,14 +124,16 @@
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // saveToolStripMenuItem1
             // 
             this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
-            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(103, 22);
+            this.saveToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
             this.saveToolStripMenuItem1.Text = "Save";
+            this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
             // Form1
             // 

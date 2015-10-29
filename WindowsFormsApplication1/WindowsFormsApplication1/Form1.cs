@@ -47,7 +47,7 @@ namespace WindowsFormsApplication1
                 }
 
             }
-            else if(richTextBox1.Text.Length < 140)
+            else if(richTextBox1.Text.Length <= 140)
             {
                 richTextBox1.BackColor = Color.White;
             }
